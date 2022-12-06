@@ -122,9 +122,9 @@ $ cougarnet --disable-ipv6 --terminal=a,b,r1 scenario1.cfg
 
 At five seconds, a single ICMP packet is sent from host `a` to the broadcast IP
 address for the subnet, i.e., 10.0.0.255.  You should see output that it is
-received by all other hosts on the subnet/LAN, and you should _not_ see output
-that it has been treated as a packet to be ignored or forwarded (i.e., "ICMP
-packet not for me.").
+received by all other hosts on the subnet/LAN, and you should _not_ see the text
+output "ICMP packet not for me.", which means that it has been treated as a
+packet to be ignored or forwarded.
 
 To test the functionality of your forwarding table more generally, you can run
 the following:
